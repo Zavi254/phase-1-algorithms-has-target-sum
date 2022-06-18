@@ -1,5 +1,17 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let i = 0; i < array.length; i++){
+    const number = target - array[i];
+
+    for(let j = i + 1; j < array.length; j++){
+      if(array[j] === number){
+        return true
+      }
+      else{
+        return false;
+      }
+    }
+  }
 }
 
 /* 
@@ -8,6 +20,7 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  iterate through the array
 */
 
 /*
